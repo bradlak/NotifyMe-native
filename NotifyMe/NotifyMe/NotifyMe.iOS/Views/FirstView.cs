@@ -16,7 +16,7 @@ namespace NotifyMe.iOS.Views
         {
             base.ViewDidLoad();
 
-            var set = this.CreateBindingSet<FirstView, FirstViewModel>();
+            var set = this.CreateBindingSet<FirstView, LoginViewModel>();
             set.Bind(Label).To(vm => vm.Hello);
             set.Bind(TextField).To(vm => vm.Hello);
             set.Apply();

@@ -11,7 +11,7 @@ namespace NotifyMe.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.LoginViewModel>();
         }
     }
 }
