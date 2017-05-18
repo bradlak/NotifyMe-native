@@ -2914,35 +2914,35 @@ namespace NotifyMe.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b004d
-			public const int abc_background_cache_hint_selector_material_dark = 2131427405;
+			// aapt resource value: 0x7f0b0051
+			public const int abc_background_cache_hint_selector_material_dark = 2131427409;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int abc_background_cache_hint_selector_material_light = 2131427406;
+			// aapt resource value: 0x7f0b0052
+			public const int abc_background_cache_hint_selector_material_light = 2131427410;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int abc_btn_colored_borderless_text_material = 2131427407;
+			// aapt resource value: 0x7f0b0053
+			public const int abc_btn_colored_borderless_text_material = 2131427411;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_color_highlight_material = 2131427408;
+			// aapt resource value: 0x7f0b0054
+			public const int abc_color_highlight_material = 2131427412;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int abc_input_method_navigation_guard = 2131427328;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int abc_primary_text_disable_only_material_dark = 2131427409;
-			
-			// aapt resource value: 0x7f0b0052
-			public const int abc_primary_text_disable_only_material_light = 2131427410;
-			
-			// aapt resource value: 0x7f0b0053
-			public const int abc_primary_text_material_dark = 2131427411;
-			
-			// aapt resource value: 0x7f0b0054
-			public const int abc_primary_text_material_light = 2131427412;
-			
 			// aapt resource value: 0x7f0b0055
-			public const int abc_search_url_text = 2131427413;
+			public const int abc_primary_text_disable_only_material_dark = 2131427413;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int abc_primary_text_disable_only_material_light = 2131427414;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int abc_primary_text_material_dark = 2131427415;
+			
+			// aapt resource value: 0x7f0b0058
+			public const int abc_primary_text_material_light = 2131427416;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int abc_search_url_text = 2131427417;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int abc_search_url_text_normal = 2131427329;
@@ -2953,32 +2953,32 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f0b0003
 			public const int abc_search_url_text_selected = 2131427331;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int abc_secondary_text_material_dark = 2131427414;
-			
-			// aapt resource value: 0x7f0b0057
-			public const int abc_secondary_text_material_light = 2131427415;
-			
-			// aapt resource value: 0x7f0b0058
-			public const int abc_tint_btn_checkable = 2131427416;
-			
-			// aapt resource value: 0x7f0b0059
-			public const int abc_tint_default = 2131427417;
-			
 			// aapt resource value: 0x7f0b005a
-			public const int abc_tint_edittext = 2131427418;
+			public const int abc_secondary_text_material_dark = 2131427418;
 			
 			// aapt resource value: 0x7f0b005b
-			public const int abc_tint_seek_thumb = 2131427419;
+			public const int abc_secondary_text_material_light = 2131427419;
 			
 			// aapt resource value: 0x7f0b005c
-			public const int abc_tint_spinner = 2131427420;
+			public const int abc_tint_btn_checkable = 2131427420;
 			
 			// aapt resource value: 0x7f0b005d
-			public const int abc_tint_switch_thumb = 2131427421;
+			public const int abc_tint_default = 2131427421;
 			
 			// aapt resource value: 0x7f0b005e
-			public const int abc_tint_switch_track = 2131427422;
+			public const int abc_tint_edittext = 2131427422;
+			
+			// aapt resource value: 0x7f0b005f
+			public const int abc_tint_seek_thumb = 2131427423;
+			
+			// aapt resource value: 0x7f0b0060
+			public const int abc_tint_spinner = 2131427424;
+			
+			// aapt resource value: 0x7f0b0061
+			public const int abc_tint_switch_thumb = 2131427425;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int abc_tint_switch_track = 2131427426;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int accent = 2131427398;
@@ -2991,6 +2991,9 @@ namespace NotifyMe.Droid
 			
 			// aapt resource value: 0x7f0b004c
 			public const int activated_color = 2131427404;
+			
+			// aapt resource value: 0x7f0b004e
+			public const int background = 2131427406;
 			
 			// aapt resource value: 0x7f0b0006
 			public const int background_floating_material_dark = 2131427334;
@@ -3028,8 +3031,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f0b0011
 			public const int button_material_light = 2131427345;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int design_error = 2131427423;
+			// aapt resource value: 0x7f0b0063
+			public const int design_error = 2131427427;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int design_fab_shadow_end_color = 2131427386;
@@ -3061,8 +3064,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f0b0043
 			public const int design_textinput_error_color_light = 2131427395;
 			
-			// aapt resource value: 0x7f0b0060
-			public const int design_tint_password_toggle = 2131427424;
+			// aapt resource value: 0x7f0b0064
+			public const int design_tint_password_toggle = 2131427428;
 			
 			// aapt resource value: 0x7f0b0012
 			public const int dim_foreground_disabled_material_dark = 2131427346;
@@ -3099,6 +3102,9 @@ namespace NotifyMe.Droid
 			
 			// aapt resource value: 0x7f0b0047
 			public const int lightPrimary = 2131427399;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int lighterBackground = 2131427407;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int material_blue_grey_800 = 2131427356;
@@ -3175,6 +3181,9 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f0b0031
 			public const int ripple_material_light = 2131427377;
 			
+			// aapt resource value: 0x7f0b004d
+			public const int secondPrimary = 2131427405;
+			
 			// aapt resource value: 0x7f0b004a
 			public const int secondaryText = 2131427402;
 			
@@ -3196,11 +3205,11 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f0b0037
 			public const int switch_thumb_disabled_material_light = 2131427383;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int switch_thumb_material_dark = 2131427425;
+			// aapt resource value: 0x7f0b0065
+			public const int switch_thumb_material_dark = 2131427429;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int switch_thumb_material_light = 2131427426;
+			// aapt resource value: 0x7f0b0066
+			public const int switch_thumb_material_light = 2131427430;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int switch_thumb_normal_material_dark = 2131427384;
@@ -3210,6 +3219,9 @@ namespace NotifyMe.Droid
 			
 			// aapt resource value: 0x7f0b0048
 			public const int textIcon = 2131427400;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int transparent = 2131427408;
 			
 			static Color()
 			{
@@ -3844,22 +3856,37 @@ namespace NotifyMe.Droid
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int design_fab_background = 2130837587;
+			public const int button_color = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int design_ic_visibility = 2130837588;
+			public const int design_fab_background = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int design_snackbar_background = 2130837589;
+			public const int design_ic_visibility = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int navigation_empty_icon = 2130837590;
-			
-			// aapt resource value: 0x7f020058
-			public const int notification_template_icon_bg = 2130837592;
+			public const int design_snackbar_background = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int splash = 2130837591;
+			public const int envelope = 2130837591;
+			
+			// aapt resource value: 0x7f020058
+			public const int facebook = 2130837592;
+			
+			// aapt resource value: 0x7f020059
+			public const int logo = 2130837593;
+			
+			// aapt resource value: 0x7f02005a
+			public const int navigation_empty_icon = 2130837594;
+			
+			// aapt resource value: 0x7f02005d
+			public const int notification_template_icon_bg = 2130837597;
+			
+			// aapt resource value: 0x7f02005b
+			public const int splash = 2130837595;
+			
+			// aapt resource value: 0x7f02005c
+			public const int transparent_button = 2130837596;
 			
 			static Drawable()
 			{
@@ -3880,8 +3907,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f07000c
 			public const int MvxBindingTagUnique = 2131165196;
 			
-			// aapt resource value: 0x7f07007a
-			public const int action0 = 2131165306;
+			// aapt resource value: 0x7f07007b
+			public const int action0 = 2131165307;
 			
 			// aapt resource value: 0x7f070060
 			public const int action_bar = 2131165280;
@@ -3907,8 +3934,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070061
 			public const int action_context_bar = 2131165281;
 			
-			// aapt resource value: 0x7f07007e
-			public const int action_divider = 2131165310;
+			// aapt resource value: 0x7f07007f
+			public const int action_divider = 2131165311;
 			
 			// aapt resource value: 0x7f070003
 			public const int action_menu_divider = 2131165187;
@@ -3952,8 +3979,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070049
 			public const int buttonPanel = 2131165257;
 			
-			// aapt resource value: 0x7f07007b
-			public const int cancel_action = 2131165307;
+			// aapt resource value: 0x7f07007c
+			public const int cancel_action = 2131165308;
 			
 			// aapt resource value: 0x7f07002e
 			public const int center = 2131165230;
@@ -3967,8 +3994,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070057
 			public const int checkbox = 2131165271;
 			
-			// aapt resource value: 0x7f070081
-			public const int chronometer = 2131165313;
+			// aapt resource value: 0x7f070082
+			public const int chronometer = 2131165314;
 			
 			// aapt resource value: 0x7f070037
 			public const int clip_horizontal = 2131165239;
@@ -3982,8 +4009,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f07004f
 			public const int contentPanel = 2131165263;
 			
-			// aapt resource value: 0x7f070079
-			public const int content_frame = 2131165305;
+			// aapt resource value: 0x7f07007a
+			public const int content_frame = 2131165306;
 			
 			// aapt resource value: 0x7f070055
 			public const int custom = 2131165269;
@@ -4021,8 +4048,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f07001f
 			public const int end = 2131165215;
 			
-			// aapt resource value: 0x7f070086
-			public const int end_padder = 2131165318;
+			// aapt resource value: 0x7f070087
+			public const int end_padder = 2131165319;
 			
 			// aapt resource value: 0x7f070028
 			public const int enterAlways = 2131165224;
@@ -4066,8 +4093,11 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070044
 			public const int image = 2131165252;
 			
-			// aapt resource value: 0x7f070085
-			public const int info = 2131165317;
+			// aapt resource value: 0x7f070079
+			public const int imageView1 = 2131165305;
+			
+			// aapt resource value: 0x7f070086
+			public const int info = 2131165318;
 			
 			// aapt resource value: 0x7f070000
 			public const int item_touch_helper_previous_elevation = 2131165184;
@@ -4075,11 +4105,11 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070032
 			public const int left = 2131165234;
 			
-			// aapt resource value: 0x7f07007f
-			public const int line1 = 2131165311;
+			// aapt resource value: 0x7f070080
+			public const int line1 = 2131165312;
 			
-			// aapt resource value: 0x7f070083
-			public const int line3 = 2131165315;
+			// aapt resource value: 0x7f070084
+			public const int line3 = 2131165316;
 			
 			// aapt resource value: 0x7f07000d
 			public const int listMode = 2131165197;
@@ -4087,8 +4117,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070046
 			public const int list_item = 2131165254;
 			
-			// aapt resource value: 0x7f07007d
-			public const int media_actions = 2131165309;
+			// aapt resource value: 0x7f07007e
+			public const int media_actions = 2131165310;
 			
 			// aapt resource value: 0x7f070020
 			public const int middle = 2131165216;
@@ -4222,8 +4252,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070034
 			public const int start = 2131165236;
 			
-			// aapt resource value: 0x7f07007c
-			public const int status_bar_latest_event_content = 2131165308;
+			// aapt resource value: 0x7f07007d
+			public const int status_bar_latest_event_content = 2131165309;
 			
 			// aapt resource value: 0x7f07005a
 			public const int submenuarrow = 2131165274;
@@ -4234,11 +4264,11 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f07000f
 			public const int tabMode = 2131165199;
 			
-			// aapt resource value: 0x7f070084
-			public const int text = 2131165316;
+			// aapt resource value: 0x7f070085
+			public const int text = 2131165317;
 			
-			// aapt resource value: 0x7f070082
-			public const int text2 = 2131165314;
+			// aapt resource value: 0x7f070083
+			public const int text2 = 2131165315;
 			
 			// aapt resource value: 0x7f070052
 			public const int textSpacerNoButtons = 2131165266;
@@ -4246,8 +4276,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070078
 			public const int text_input_password_toggle = 2131165304;
 			
-			// aapt resource value: 0x7f070080
-			public const int time = 2131165312;
+			// aapt resource value: 0x7f070081
+			public const int time = 2131165313;
 			
 			// aapt resource value: 0x7f070048
 			public const int title = 2131165256;
@@ -4255,8 +4285,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f07004d
 			public const int title_template = 2131165261;
 			
-			// aapt resource value: 0x7f070087
-			public const int toolbar = 2131165319;
+			// aapt resource value: 0x7f070088
+			public const int toolbar = 2131165320;
 			
 			// aapt resource value: 0x7f070027
 			public const int top = 2131165223;
@@ -5136,8 +5166,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f090166
 			public const int MyTheme = 2131296614;
 			
-			// aapt resource value: 0x7f090168
-			public const int MyTheme_ActionBar = 2131296616;
+			// aapt resource value: 0x7f090169
+			public const int MyTheme_ActionBar = 2131296617;
 			
 			// aapt resource value: 0x7f090167
 			public const int MyTheme_Base = 2131296615;
@@ -5744,6 +5774,9 @@ namespace NotifyMe.Droid
 			
 			// aapt resource value: 0x7f090164
 			public const int Widget_Design_TextInputLayout = 2131296612;
+			
+			// aapt resource value: 0x7f090168
+			public const int transparentButton = 2131296616;
 			
 			static Style()
 			{
