@@ -43,6 +43,7 @@ namespace NotifyMe.Core.ViewModels
 
         protected virtual void OnExit()
         {
+            Close(this);
         }
     }
 }

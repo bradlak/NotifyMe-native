@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{33032E89-C418-429E-B162-BF2B060963B9}|Default">
+  <MonoDevelop.Ide.ItemProperties.NotifyMe.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0715f740563d3336" AndroidDesignerPreferredTheme="MyTheme" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NotifyMe/NotifyMe.Droid/Views/BaseAppCompatActivity.cs">
+    <Files>
+      <File FileName="NotifyMe/NotifyMe.Droid/Views/BaseAppCompatActivity.cs" Line="16" Column="37" />
+      <File FileName="NotifyMe/NotifyMe.Droid/obj/Debug/android/manifest/AndroidManifest.xml" Line="8" Column="79" />
+      <File FileName="NotifyMe/NotifyMe.Droid/SplashScreen.cs" Line="8" Column="33" />
+      <File FileName="NotifyMe/NotifyMe.Droid/Resources/values/strings.xml" Line="4" Column="49" />
+      <File FileName="NotifyMe/NotifyMe.Core/ViewModels/MainViewModel.cs" Line="1" Column="1" />
+      <File FileName="NotifyMe/NotifyMe.Core/ViewModels/BaseViewModel.cs" Line="45" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

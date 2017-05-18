@@ -15,7 +15,5 @@ namespace NotifyMe.Droid.Views
         {
             base.OnCreate(bundle);
         }
-
-
     }
 }

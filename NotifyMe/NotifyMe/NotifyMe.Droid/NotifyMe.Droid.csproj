@@ -18,9 +18,10 @@
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -33,11 +34,8 @@
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
-    <BundleAssemblies>False</BundleAssemblies>
-    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
     <Debugger>Xamarin</Debugger>
-    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -175,6 +173,7 @@
     <Compile Include="Views\HistoryFragment.cs" />
     <Compile Include="Views\LoginView.cs" />
     <Compile Include="Views\MainView.cs" />
+    <Compile Include="MvxFragmentStatePagerAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -189,6 +188,17 @@
     <AndroidResource Include="Resources\layout\FriendsFragmentView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable-hdpi\back.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\back.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\back.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\back.png" />
+    <AndroidResource Include="Resources\layout\tabView.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\history.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\people.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\history.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\people.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\history.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\people.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
@@ -212,14 +222,14 @@
     <AndroidResource Include="Resources\drawable\splash.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable_hdpi\" />
-    <Folder Include="Resources\drawable_mdpi\" />
-    <Folder Include="Resources\drawable_xhdpi\" />
-    <Folder Include="Resources\drawable_xxhdpi\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NotifyMe.Core\NotifyMe.Core.csproj">
-      <Project>{31d7792c-8339-4c32-8c91-123c9b248b83}</Project>
+      <Project>{C38C9552-19E2-4D23-8088-9F0305BAC63B}</Project>
       <Name>NotifyMe.Core</Name>
     </ProjectReference>
   </ItemGroup>

@@ -16,8 +16,8 @@ using MvvmCross.Droid.Support.V4;
 namespace NotifyMe.Droid.Views
 {
    // [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, false)]
-   // [Register("NotifyMe.Droid.Views.HistoryFragment")]
-    public class HistoryFragment : MvxFragment<HistoryViewModel>
+   [Register("notifyMe.droid.views.HistoryFragment")]
+    public class HistoryFragment : MvxFragment
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {

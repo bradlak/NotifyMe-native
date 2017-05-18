@@ -16,13 +16,14 @@ using MvvmCross.Droid.Shared.Attributes;
 namespace NotifyMe.Droid.Views
 {
     //[MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, false)]
-   // [Register("NotifyMe.Droid.Views.FriendsFragment")]
-    public class FriendsFragment : MvxFragment<FriendsViewModel>
+   [Register("notifyMe.droid.views.FriendsFragment")]
+    public class FriendsFragment : MvxFragment
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
             var view = inflater.Inflate(Resource.Layout.FriendsFragmentView, container, false);
+
             return view;
         }
     }

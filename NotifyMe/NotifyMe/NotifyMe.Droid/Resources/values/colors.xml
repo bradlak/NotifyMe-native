@@ -14,4 +14,5 @@
   <color name="background">#003338</color>
   <color name="lighterBackground">#486669</color>
   <color name="transparent">#80000000</color>
+	<color name="white">#ffffff</color>
 </resources>

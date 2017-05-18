@@ -5,9 +5,9 @@ using MvvmCross.Droid.Views;
 namespace NotifyMe.Droid
 {
     [Activity(
-        Label = "NotifyMe"
+        Label = "NotifyMe.Native"
         , MainLauncher = true
-        , Icon = "@mipmap/ic_launcher"
+        , Icon = "@drawable/envelope"
         , Theme = "@style/Theme.Splash"
         , NoHistory = true
         , ScreenOrientation = ScreenOrientation.Portrait)]
