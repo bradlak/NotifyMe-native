@@ -1,5 +1,6 @@
 using Android.App;
 using Android.OS;
+using MvvmCross.Core.Views;
 using NotifyMe.Core.ViewModels;
 
 namespace NotifyMe.Droid.Views

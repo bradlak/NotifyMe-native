@@ -1,21 +1,13 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using NotifyMe.Core.ViewModels;
-using MvvmCross.Droid.Support.V4;
-using Android.Support.V4.App;
-using MvvmCross.Droid.Shared.Caching;
 using Android.Support.V4.View;
-using NotifyMe.Droid;
 using Android.Support.Design.Widget;
+using System.Diagnostics.Contracts;
 
 namespace NotifyMe.Droid.Views
 {
@@ -34,23 +26,13 @@ namespace NotifyMe.Droid.Views
             var viewPager = FindViewById<ViewPager>(Resource.Id.viewpager);
             if (viewPager != null)
             {
-                var fragments = new List<MvxFragmentStatePagerAdapter.FragmentInfo>
+                var fragments = new List<FragmentInfo>
                 {
-                    new MvxFragmentStatePagerAdapter.FragmentInfo
-                    {
-                        Fragment = new FriendsFragment(),
-                        Title = "Friends",
-                        ViewModel = ViewModel.FriendsViewModel
-                    },
-                    new MvxFragmentStatePagerAdapter.FragmentInfo
-                    {
-                        Fragment = new HistoryFragment(),
-                        Title = "History",
-                        ViewModel = ViewModel.HistoryViewModel
-                    },
+                    new FragmentInfo() {ViewModel = ViewModel.FriendsViewModel, Fragment = new FriendsFragment()},
+                    new FragmentInfo() {ViewModel = ViewModel.HistoryViewModel, Fragment = new HistoryFragment()}
                 };
 
-                viewPager.Adapter = new MvxFragmentStatePagerAdapter(this, SupportFragmentManager, fragments);
+                viewPager.Adapter = new MvxFragmenPagerAdapter(SupportFragmentManager, fragments);
             }
 
             var tabLayout = FindViewById<TabLayout>(Resource.Id.tabs);
@@ -66,14 +48,14 @@ namespace NotifyMe.Droid.Views
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             var result = base.OnOptionsItemSelected(item);
-			if (ViewModel != null)
-			{
-				if (item.ItemId == Resource.Id.home || item.ItemId == Android.Resource.Id.Home)
-				{
+            if (ViewModel != null)
+            {
+                if (item.ItemId == Resource.Id.home || item.ItemId == Android.Resource.Id.Home)
+                {
                     ViewModel.ExitCommand.Execute(null);
-					result = true;
-				}
-			}
+                    result = true;
+                }
+            }
 
             return result;
         }
@@ -84,14 +66,19 @@ namespace NotifyMe.Droid.Views
 
             var image = view.FindViewById<ImageView>(Resource.Id.tabIcon);
             var text = view.FindViewById<TextView>(Resource.Id.tabText);
-            if(i == 0){
+            if (i == 0)
+            {
                 image.SetImageDrawable(Resources.GetDrawable(Resource.Drawable.people));
                 text.Text = "FRIENDS";
             }
-            else{
+            else
+            {
                 image.SetImageDrawable(Resources.GetDrawable(Resource.Drawable.history));
-				text.Text = "HISTORY";
+                text.Text = "HISTORY";
             }
+
+            view.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent,
+                                                               ViewGroup.LayoutParams.MatchParent);
 
             return view;
         }

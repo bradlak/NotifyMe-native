@@ -48,14 +48,5 @@ namespace NotifyMe.Droid.Views
                 ViewModel.ResumeCommand.Execute();
             }
         }
-
-        protected override void OnPause()
-        {
-            if(ViewModel != null)
-            {
-                ViewModel.ExitCommand.Execute();
-            }
-            base.OnPause();
-        }
     }
 }

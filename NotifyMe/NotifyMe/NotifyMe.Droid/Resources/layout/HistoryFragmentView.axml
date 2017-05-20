@@ -4,13 +4,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@color/background">
     <TextView
         local:MvxBind="Text Info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:textColor="@color/white" />
+        android:id="@+id/textView1" />
 </LinearLayout>

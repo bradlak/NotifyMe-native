@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple2">
+	 <item>
+    <selector>
+        <item android:state_pressed="true">
+            <color android:color="@color/ripple" />
+        </item>
+        <item>
+            <color android:color="@color/lighterBackground" />
+        </item>
+    </selector>
+    </item>
+</ripple>

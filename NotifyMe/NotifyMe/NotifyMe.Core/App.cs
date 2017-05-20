@@ -1,3 +1,4 @@
+using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 
 namespace NotifyMe.Core

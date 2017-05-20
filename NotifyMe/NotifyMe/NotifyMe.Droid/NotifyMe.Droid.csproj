@@ -173,7 +173,10 @@
     <Compile Include="Views\HistoryFragment.cs" />
     <Compile Include="Views\LoginView.cs" />
     <Compile Include="Views\MainView.cs" />
-    <Compile Include="MvxFragmentStatePagerAdapter.cs" />
+    <Compile Include="MvxFragmentPagerAdapter.cs" />
+    <Compile Include="ViewPresenter.cs" />
+    <Compile Include="PlatformSpecific\NavigationProvider.cs" />
+    <Compile Include="FragmentInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -199,6 +202,8 @@
     <AndroidResource Include="Resources\drawable-xhdpi\people.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\history.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\people.png" />
+    <AndroidResource Include="Resources\layout\HistoryFragmentView.axml" />
+    <AndroidResource Include="Resources\drawable-v21\tabRipple.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
@@ -226,6 +231,8 @@
     <Folder Include="Resources\drawable-mdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="PlatformSpecific\" />
+    <Folder Include="Resources\drawable-v21\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NotifyMe.Core\NotifyMe.Core.csproj">
