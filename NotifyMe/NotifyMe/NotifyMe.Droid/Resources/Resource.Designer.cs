@@ -1831,6 +1831,7 @@ namespace NotifyMe.Droid
 			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_reverseLayout = global::NotifyMe.Droid.Resource.Styleable.RecyclerView_reverseLayout;
 			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_spanCount = global::NotifyMe.Droid.Resource.Styleable.RecyclerView_spanCount;
 			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_stackFromEnd = global::NotifyMe.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Gcm.Client.Resource.String.library_name = global::NotifyMe.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Animation

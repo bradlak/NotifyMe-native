@@ -1,9 +1,5 @@
 ﻿using MvvmCross.Core.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MvvmCross.Plugins.Messenger;
 
 namespace NotifyMe.Core.ViewModels
 {
@@ -14,6 +10,13 @@ namespace NotifyMe.Core.ViewModels
         private MvxCommand resumeCommand;
 
         private MvxCommand exitCommand;
+
+        public BaseViewModel(IMvxMessenger messenger)
+        {
+            Messenger = messenger;
+        }
+
+        public IMvxMessenger Messenger { get; private set; }
 
         protected bool IsBusy
         {

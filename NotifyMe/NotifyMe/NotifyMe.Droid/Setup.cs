@@ -5,6 +5,7 @@ using MvvmCross.Platform.Platform;
 using MvvmCross.Droid.Views;
 using MvvmCross.Platform;
 using NotifyMe.Core;
+using NotifyMe.Core.Infrastructure;
 
 namespace NotifyMe.Droid
 {
@@ -27,7 +28,7 @@ namespace NotifyMe.Droid
         protected override void InitializeLastChance()
         {
             base.InitializeLastChance();
-            Mvx.RegisterType<INavigationProvider, NavigationProvider>();
+            Mvx.RegisterType<ILoginService, LoginService>();
         }
     }
 }

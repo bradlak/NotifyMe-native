@@ -1,6 +1,44 @@
 ﻿<Properties StartupConfiguration="{33032E89-C418-429E-B162-BF2B060963B9}|Default">
-  <MonoDevelop.Ide.ItemProperties.NotifyMe.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0715f740563d3336" AndroidDesignerPreferredTheme="MyTheme" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.ItemProperties.NotifyMe.Droid PreferredExecutionTarget="Android.0715f740563d3336" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NotifyMe/NotifyMe.Core/ViewModels/LoginViewModel.cs">
+    <Files>
+      <File FileName="NotifyMe.Models/FacebookFriend.cs" Line="11" Column="17" />
+      <File FileName="NotifyMe/NotifyMe.Core/Services/FacebookService.cs" Line="29" Column="1" />
+      <File FileName="NotifyMe/NotifyMe.Core/ViewModels/CreateMessageViewModel.cs" Line="12" Column="1" />
+      <File FileName="NotifyMe/NotifyMe.Core/ViewModels/FriendsViewModel.cs" Line="15" Column="10" />
+      <File FileName="NotifyMe/NotifyMe.Core/ViewModels/HistoryViewModel.cs" Line="14" Column="13" />
+      <File FileName="NotifyMe/NotifyMe.Core/ViewModels/MainViewModel.cs" Line="17" Column="10" />
+      <File FileName="NotifyMe/NotifyMe.Droid/Views/BaseAppCompatActivity.cs" Line="10" Column="65" />
+      <File FileName="NotifyMe/NotifyMe.Droid/Resources/values/styles.xml" Line="2" Column="1" />
+      <File FileName="NotifyMe/NotifyMe.Droid/PlatformSpecific/LoginService.cs" Line="3" Column="17" />
+      <File FileName="NotifyMe/NotifyMe.Droid/Setup.cs" Line="20" Column="1" />
+      <File FileName="NotifyMe/NotifyMe.Droid/Views/MainView.cs" Line="1" Column="1" />
+      <File FileName="NotifyMe/NotifyMe.Droid/Views/LoginView.cs" Line="22" Column="10" />
+      <File FileName="NotifyMe/NotifyMe.Droid/GcmService.cs" Line="63" Column="1" />
+      <File FileName="NotifyMe/NotifyMe.Core/App.cs" Line="15" Column="13" />
+      <File FileName="NotifyMe/NotifyMe.Core/ViewModels/LoginViewModel.cs" Line="53" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NotifyMe" expanded="True">
+            <Node name="NotifyMe.Core" expanded="True">
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="LoginViewModel.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="NotifyMe.Droid" expanded="True">
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="PlatformSpecific" expanded="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
+            <Node name="NotifyMe.Models" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
