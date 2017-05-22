@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -7,10 +7,45 @@
     android:background="@color/background"
     android:minWidth="25px"
     android:minHeight="25px">
-    <TextView
-        local:MvxBind="Text Info"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/getFriends"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:textColor="@color/white" />
-</LinearLayout>
+        android:textSize="15dp"
+        android:text="SHOW FRIENDS"
+        local:MvxBind="Click GetFriendsCommand"
+        android:background="@drawable/transparent_button"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="60dp"
+        android:textColor="@drawable/button_color" />
+    <ListView
+        android:layout_below="@+id/getFriends"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/friendsList" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/getFriends"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        local:MvxBind="Visibility Visibility(IsBusy)">
+        <ProgressBar
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/busyIndicator"
+            android:indeterminateOnly="true"
+            android:keepScreenOn="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:padding="2dp"
+            android:text="Loading..." />
+    </LinearLayout>
+</RelativeLayout>

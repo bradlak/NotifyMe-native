@@ -13,7 +13,7 @@ namespace NotifyMe.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            Mvx.RegisterType<IApplicationCache, ApplicationCache>();
+            Mvx.RegisterSingleton<IApplicationCache>(new ApplicationCache());
             Mvx.RegisterType<IDatabaseService, DatabaseService>();
             Mvx.RegisterType<IFacebookService, FacebookService>();
             Mvx.RegisterType<IMobileCenterLogger, MobileCenterLogger>();

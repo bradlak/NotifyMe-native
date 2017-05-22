@@ -212,6 +212,12 @@
     <Reference Include="Microsoft.Azure.Mobile.Analytics">
       <HintPath>..\..\packages\Microsoft.Azure.Mobile.Analytics.0.12.0\lib\MonoAndroid403\Microsoft.Azure.Mobile.Analytics.dll</HintPath>
     </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility">
+      <HintPath>..\..\packages\MvvmCross.Plugin.Visibility.4.4.0\lib\MonoAndroid\MvvmCross.Plugins.Visibility.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility.Droid">
+      <HintPath>..\..\packages\MvvmCross.Plugin.Visibility.4.4.0\lib\MonoAndroid\MvvmCross.Plugins.Visibility.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
@@ -232,6 +238,8 @@
     <Compile Include="PlatformSpecific\LoginService.cs" />
     <Compile Include="GcmService.cs" />
     <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="Adapters\FriendsAdapter.cs" />
+    <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -260,6 +268,7 @@
     <AndroidResource Include="Resources\layout\HistoryFragmentView.axml" />
     <AndroidResource Include="Resources\drawable-v21\tabRipple.xml" />
     <None Include="FodyWeavers.xml" />
+    <AndroidResource Include="Resources\layout\friendListItem.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
@@ -289,6 +298,7 @@
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="PlatformSpecific\" />
     <Folder Include="Resources\drawable-v21\" />
+    <Folder Include="Adapters\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NotifyMe.Core\NotifyMe.Core.csproj">

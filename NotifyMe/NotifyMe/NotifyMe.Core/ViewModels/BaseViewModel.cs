@@ -18,7 +18,7 @@ namespace NotifyMe.Core.ViewModels
 
         public IMvxMessenger Messenger { get; private set; }
 
-        protected bool IsBusy
+        public bool IsBusy
         {
             get { return isBusy; }
             set { isBusy = value; RaisePropertyChanged(); }
