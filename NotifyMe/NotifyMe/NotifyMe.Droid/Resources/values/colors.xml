@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <!--Get colors from: http://www.materialpalette.com/-->
   <color name="primary">#FFBF65</color>
   <color name="primaryDark">#003338</color>
   <color name="accent">#FFBF65</color>
@@ -17,4 +16,5 @@
 	<color name="white">#ffffff</color>
 	<color name="ripple">#55777a</color>
 	<color name="ripple2">#739ea3</color>
+	<color name="gray">#ffe0e0e0</color>
 </resources>

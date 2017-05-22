@@ -19,7 +19,7 @@
         android:id="@+id/tabText"
         android:padding="5dp"
         android:gravity="center"
-        android:textColor="#ffe0e0e0"
+        android:textColor="@color/gray"
         android:textSize="15dp"
         android:layout_below="@+id/tabIcon" />
 </RelativeLayout>

@@ -11,5 +11,7 @@
         local:MvxBind="Text Info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="16dp"
         android:id="@+id/textView1" />
 </LinearLayout>

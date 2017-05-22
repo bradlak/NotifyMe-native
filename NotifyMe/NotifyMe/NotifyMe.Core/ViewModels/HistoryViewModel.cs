@@ -14,7 +14,7 @@ namespace NotifyMe.Core.ViewModels
 
         }
 
-        public string text = "Heheszki";
+        public string text = "History here";
 
         public string Info
         {
