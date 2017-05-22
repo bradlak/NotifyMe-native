@@ -32,21 +32,5 @@ namespace NotifyMe.Droid
             base.InitializeLastChance();
             Mvx.RegisterType<ILoginService, LoginService>();
         }
-
-        public override void LoadPlugins(MvvmCross.Platform.Plugins.IMvxPluginManager pluginManager)
-        {
-            pluginManager.EnsurePluginLoaded<MvxVisibilityValueConverter>();
-            base.LoadPlugins(pluginManager);
-        }
-
-        protected override System.Collections.Generic.IEnumerable<System.Reflection.Assembly> ValueConverterAssemblies
-        {
-            get
-            {
-                var result = base.ValueConverterAssemblies.ToList();
-                result.Add(typeof(MvxVisibilityValueConverter).Assembly);
-                return result;
-            }
-        }
     }
 }
