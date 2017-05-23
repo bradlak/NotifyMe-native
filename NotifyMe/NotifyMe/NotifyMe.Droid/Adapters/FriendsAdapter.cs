@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using Android.App;
 using Android.Views;
 using Android.Widget;
-using Java.Lang;
+using FFImageLoading;
+using FFImageLoading.Transformations;
+using FFImageLoading.Views;
 using NotifyMe.Core.ViewModels;
-using NotifyMe.Models;
 
 namespace NotifyMe.Droid
 {
@@ -58,13 +57,15 @@ namespace NotifyMe.Droid
 
             if (viewModel.Friends != null && viewModel.Friends.Any())
             {
-
                 var currentFriend = viewModel.Friends[position];
 
                 var nameTextView = view.FindViewById<TextView>(Resource.Id.friendName);
-
+                var imageView = view.FindViewById<ImageViewAsync>(Resource.Id.friendImage);
                 nameTextView.Text = currentFriend.Name;
 
+                ImageService.Instance.LoadUrl(currentFriend.ImageUrl)
+                            .Transform(new CircleTransformation())
+                            .Into(imageView);
             }
 
             return view;

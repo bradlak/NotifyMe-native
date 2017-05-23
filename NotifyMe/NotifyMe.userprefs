@@ -1,17 +1,14 @@
 ﻿<Properties StartupConfiguration="{33032E89-C418-429E-B162-BF2B060963B9}|Default">
-  <MonoDevelop.Ide.ItemProperties.NotifyMe.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" AndroidDesignerPreferredTheme="MyTheme" />
+  <MonoDevelop.Ide.ItemProperties.NotifyMe.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0715f740563d3336" AndroidDesignerPreferredTheme="MyTheme" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="NotifyMe/NotifyMe.Core/ViewModels/LoginViewModel.cs" Line="43" Column="8" />
-      <File FileName="NotifyMe/NotifyMe.Core/ViewModels/FriendsViewModel.cs" Line="66" Column="58" />
       <File FileName="NotifyMe/NotifyMe.Core/ViewModels/HistoryViewModel.cs" Line="22" Column="14" />
-      <File FileName="NotifyMe/NotifyMe.Droid/Views/FriendsFragment.cs" Line="41" Column="16" />
-      <File FileName="NotifyMe/NotifyMe.Droid/Adapters/FriendsAdapter.cs" Line="59" Column="65" />
+      <File FileName="NotifyMe/NotifyMe.Droid/Views/FriendsFragment.cs" Line="35" Column="42" />
+      <File FileName="NotifyMe/NotifyMe.Droid/Adapters/FriendsAdapter.cs" Line="78" Column="13" />
       <File FileName="NotifyMe/NotifyMe.Droid/Views/LoginView.cs" Line="1" Column="1" />
       <File FileName="NotifyMe/NotifyMe.Core/App.cs" Line="19" Column="73" />
       <File FileName="NotifyMe/NotifyMe.Droid/Setup.cs" Line="37" Column="1" />
-      <File FileName="NotifyMe/NotifyMe.Droid/Views/HistoryFragment.cs" Line="20" Column="2" />
-      <File FileName="NotifyMe/NotifyMe.Droid/Views/MainView.cs" Line="39" Column="43" />
+      <File FileName="NotifyMe/NotifyMe.Droid/Views/MainView.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
