@@ -91,6 +91,12 @@ namespace NotifyMe.Core.ViewModels
             }
         }
 
+        protected override void OnResume()
+        {
+            base.OnResume();
+            MessageRecipient = Cache.SelectedFriend.Name;
+        }
+
         private async Task SendMessage()
         {
             IsBusy = true;
@@ -118,10 +124,7 @@ namespace NotifyMe.Core.ViewModels
             Messenger.Publish<RefreshHistoryMessage>(new RefreshHistoryMessage(this));
             Logger.TrackEvent(Cache.CurrentUser.Name, EventType.MessageSent);
 
-            IsBusy = false;
             MessageSent = true;
-
-            ExitCommand.Execute();
         }
     }
 }

@@ -1,11 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  <TextView android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Test">
-    
-  </TextView>
-</LinearLayout>
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <include
+        layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:layout_marginBottom="20dp"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/bottomSection"
+        android:paddingBottom="30dp">
+        <ImageView
+            android:layout_width="80dp"
+            android:src="@drawable/envelope"
+            android:layout_gravity="center"
+            android:id="@+id/envelopeImage"
+            android:layout_centerHorizontal="true"
+            android:layout_height="80dp"
+            android:layout_above="@+id/textView1" />
+        <TextView
+            android:text="Message to:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textSize="22dp"
+            android:textColor="@color/primary"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_above="@+id/recipient" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:id="@+id/recipient"
+            local:MvxBind="Text MessageRecipient"
+            android:textColor="@color/primary"
+            android:layout_above="@+id/editText1" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText1"
+            local:MvxBind="Text MessageBody"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomSection">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="SEND"
+            local:MvxBind="Click SendMessageCommand; Visibility InvertedVisibility(IsBusy)"
+            android:background="@drawable/transparent_button"
+            android:textColor="@drawable/button_color"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sendBtn"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            local:MvxBind="Visibility Visibility(IsBusy)">
+            <ProgressBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/busyIndicator"
+                android:indeterminateOnly="true"
+                android:keepScreenOn="true"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:padding="2dp"
+                android:text="Sending..." />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

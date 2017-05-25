@@ -18,7 +18,7 @@
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
@@ -249,6 +249,7 @@
     <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
     <Compile Include="Adapters\FriendsAdapter.cs" />
     <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
+    <Compile Include="Views\CreateMessageView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -278,6 +279,7 @@
     <AndroidResource Include="Resources\drawable-v21\tabRipple.xml" />
     <None Include="FodyWeavers.xml" />
     <AndroidResource Include="Resources\layout\friendListItem.axml" />
+    <AndroidResource Include="Resources\layout\CreateMessageView.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />

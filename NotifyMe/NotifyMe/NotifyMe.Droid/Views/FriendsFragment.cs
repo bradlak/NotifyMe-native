@@ -32,13 +32,19 @@ namespace NotifyMe.Droid.Views
             friendsListView = view.FindViewById<ListView>(Resource.Id.friendsList);
             progress = view.FindViewById<ProgressBar>(Resource.Id.busyIndicator);
 
-            friendsAdapter =  new FriendsAdapter(this.Activity, ViewModel);
+            friendsAdapter = new FriendsAdapter(this.Activity, ViewModel);
             friendsListView.Adapter = friendsAdapter;
 
-            friendsListener = new MvxPropertyChangedListener(ViewModel).Listen( () => ViewModel.Friends, (sender, e) =>
+            friendsListener = new MvxPropertyChangedListener(ViewModel).Listen(() => ViewModel.Friends, (sender, e) =>
+           {
+               friendsAdapter.NotifyDataSetChanged();
+           });
+
+            friendsListView.ItemClick += (sender, e) =>
             {
-                friendsAdapter.NotifyDataSetChanged();
-            });
+                var selected = ViewModel.Friends[e.Position];
+                ViewModel.NavigateToCreateMessageCommand.Execute(selected);
+            };
 
             return view;
         }

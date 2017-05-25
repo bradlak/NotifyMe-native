@@ -12,6 +12,8 @@ namespace NotifyMe.Core.ViewModels
     {
         private MvxCommand getFriendsCommand;
 
+        private MvxCommand<FacebookFriend> navigateToCreateMessageCommand;
+
         private FacebookFriend selectedFriend;
 
         private ObservableCollection<FacebookFriend> friends;
@@ -67,6 +69,18 @@ namespace NotifyMe.Core.ViewModels
                     Friends = new ObservableCollection<FacebookFriend>(await FacebookService.GetFacebookFriends());
                     Logger.TrackEvent(Cache.CurrentUser.Name, EventType.FriendsCollected);
                     IsBusy = false;
+                }));
+            }
+        }
+
+        public MvxCommand<FacebookFriend> NavigateToCreateMessageCommand
+        {
+            get
+            {
+                return navigateToCreateMessageCommand ?? (navigateToCreateMessageCommand = new MvxCommand<FacebookFriend>((obj) =>
+                {
+                    Cache.SelectedFriend = obj;
+                    ShowViewModel<CreateMessageViewModel>();
                 }));
             }
         }
