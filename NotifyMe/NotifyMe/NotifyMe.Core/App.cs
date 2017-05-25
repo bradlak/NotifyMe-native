@@ -8,11 +8,6 @@ namespace NotifyMe.Core
     {
         public override void Initialize()
         {
-            CreatableTypes()
-                .EndingWith("Service")
-                .AsInterfaces()
-                .RegisterAsLazySingleton();
-
             Mvx.RegisterSingleton<IApplicationCache>(new ApplicationCache());
             Mvx.RegisterType<IDatabaseService, DatabaseService>();
             Mvx.RegisterType<IFacebookService, FacebookService>();

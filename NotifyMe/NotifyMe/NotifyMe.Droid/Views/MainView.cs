@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-
 using Android.App;
 using Android.OS;
 using Android.Views;
@@ -7,7 +6,6 @@ using Android.Widget;
 using NotifyMe.Core.ViewModels;
 using Android.Support.V4.View;
 using Android.Support.Design.Widget;
-using System.Diagnostics.Contracts;
 
 namespace NotifyMe.Droid.Views
 {
