@@ -1,31 +1,50 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MvvmCross.Plugins.Messenger;
+using NotifyMe.Core.Services;
+using NotifyMe.Models.Entities;
+using NotifyMe.Core.Infrastructure.Messages;
 
 namespace NotifyMe.Core.ViewModels
 {
     public class HistoryViewModel : BaseViewModel
     {
-        public HistoryViewModel(IMvxMessenger messenger) : base(messenger)
-        {
+        private ObservableCollection<SentMessage> sentMessages = new ObservableCollection<SentMessage>();
 
+        public HistoryViewModel(
+			IDatabaseService dbService,
+			IApplicationCache cache,
+			IMobileCenterLogger logger,
+            IMvxMessenger messenger) : base(messenger)
+        {
+            DatabaseService = dbService;
+            Cache = cache;
+            Logger = logger;
+            LoadHistory();
         }
 
-        public string text = "History here";
+        protected IDatabaseService DatabaseService { get; private set; }
 
-        public string Info
+        protected IApplicationCache Cache { get; private set; }
+
+        protected IMobileCenterLogger Logger { get; private set; }
+
+		public ObservableCollection<SentMessage> SentMessages
+		{
+			get { return sentMessages; }
+			set { sentMessages = value; RaisePropertyChanged(); }
+		}
+
+		public void LoadHistory()
+		{
+			var data = DatabaseService.GetAll<SentMessage>().OrderByDescending(z => DateTime.Parse(z.Date));
+			SentMessages = new ObservableCollection<SentMessage>(data);
+		}
+
+        protected override void OnResume()
         {
-            get
-            {
-                return text;
-            }
-            set
-            {
-                text = value;
-            }
+            LoadHistory();
         }
     }
 }

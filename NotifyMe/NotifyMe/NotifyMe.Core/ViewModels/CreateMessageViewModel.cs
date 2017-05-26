@@ -1,16 +1,16 @@
 ﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
-using MvvmCross.Plugins.Messenger;
-using NotifyMe.Core.Services;
 using MvvmCross.Core.ViewModels;
-using NotifyMe.App.Models;
+using MvvmCross.Plugins.Messenger;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using NotifyMe.Core.Infrastructure;
-using System.Net.Http;
-using NotifyMe.Models.Entities;
 using NotifyMe.Core.Enumerations;
+using NotifyMe.Core.Infrastructure;
 using NotifyMe.Core.Infrastructure.Messages;
+using NotifyMe.Core.Services;
+using NotifyMe.Models;
+using NotifyMe.Models.Entities;
 
 namespace NotifyMe.Core.ViewModels
 {
@@ -121,9 +121,9 @@ namespace NotifyMe.Core.ViewModels
             }
 
             DatabaseService.Add<SentMessage>(new SentMessage(Cache.SelectedFriend.Name, MessageBody, DateTime.Now.ToString()));
-            Messenger.Publish<RefreshHistoryMessage>(new RefreshHistoryMessage(this));
             Logger.TrackEvent(Cache.CurrentUser.Name, EventType.MessageSent);
 
+            IsBusy = false;
             MessageSent = true;
         }
     }

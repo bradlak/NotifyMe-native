@@ -250,6 +250,7 @@
     <Compile Include="Adapters\FriendsAdapter.cs" />
     <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
     <Compile Include="Views\CreateMessageView.cs" />
+    <Compile Include="Adapters\HistoryAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -278,8 +279,9 @@
     <AndroidResource Include="Resources\layout\HistoryFragmentView.axml" />
     <AndroidResource Include="Resources\drawable-v21\tabRipple.xml" />
     <None Include="FodyWeavers.xml" />
-    <AndroidResource Include="Resources\layout\friendListItem.axml" />
     <AndroidResource Include="Resources\layout\CreateMessageView.axml" />
+    <AndroidResource Include="Resources\layout\historyListItem.axml" />
+    <AndroidResource Include="Resources\layout\friendListItem.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />

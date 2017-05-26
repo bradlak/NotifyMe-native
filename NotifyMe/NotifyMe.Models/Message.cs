@@ -1,4 +1,4 @@
-﻿namespace NotifyMe.App.Models
+﻿namespace NotifyMe.Models
 {
     public class Message
     {

@@ -3932,8 +3932,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f07000c
 			public const int MvxBindingTagUnique = 2131165196;
 			
-			// aapt resource value: 0x7f07008a
-			public const int action0 = 2131165322;
+			// aapt resource value: 0x7f070090
+			public const int action0 = 2131165328;
 			
 			// aapt resource value: 0x7f070060
 			public const int action_bar = 2131165280;
@@ -3959,8 +3959,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070061
 			public const int action_context_bar = 2131165281;
 			
-			// aapt resource value: 0x7f07008e
-			public const int action_divider = 2131165326;
+			// aapt resource value: 0x7f070094
+			public const int action_divider = 2131165332;
 			
 			// aapt resource value: 0x7f070003
 			public const int action_menu_divider = 2131165187;
@@ -3992,14 +3992,17 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070021
 			public const int always = 2131165217;
 			
-			// aapt resource value: 0x7f070087
-			public const int appbar = 2131165319;
+			// aapt resource value: 0x7f07008d
+			public const int appbar = 2131165325;
 			
 			// aapt resource value: 0x7f07002d
 			public const int auto = 2131165229;
 			
 			// aapt resource value: 0x7f07001e
 			public const int beginning = 2131165214;
+			
+			// aapt resource value: 0x7f07008a
+			public const int body = 2131165322;
 			
 			// aapt resource value: 0x7f070026
 			public const int bottom = 2131165222;
@@ -4013,8 +4016,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070049
 			public const int buttonPanel = 2131165257;
 			
-			// aapt resource value: 0x7f07008b
-			public const int cancel_action = 2131165323;
+			// aapt resource value: 0x7f070091
+			public const int cancel_action = 2131165329;
 			
 			// aapt resource value: 0x7f07002e
 			public const int center = 2131165230;
@@ -4028,8 +4031,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070057
 			public const int checkbox = 2131165271;
 			
-			// aapt resource value: 0x7f070091
-			public const int chronometer = 2131165329;
+			// aapt resource value: 0x7f070097
+			public const int chronometer = 2131165335;
 			
 			// aapt resource value: 0x7f070037
 			public const int clip_horizontal = 2131165239;
@@ -4048,6 +4051,9 @@ namespace NotifyMe.Droid
 			
 			// aapt resource value: 0x7f070054
 			public const int customPanel = 2131165268;
+			
+			// aapt resource value: 0x7f070089
+			public const int date = 2131165321;
 			
 			// aapt resource value: 0x7f07005e
 			public const int decor_content_parent = 2131165278;
@@ -4079,11 +4085,14 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070062
 			public const int edit_query = 2131165282;
 			
+			// aapt resource value: 0x7f070087
+			public const int emptyView = 2131165319;
+			
 			// aapt resource value: 0x7f07001f
 			public const int end = 2131165215;
 			
-			// aapt resource value: 0x7f070096
-			public const int end_padder = 2131165334;
+			// aapt resource value: 0x7f07009c
+			public const int end_padder = 2131165340;
 			
 			// aapt resource value: 0x7f070028
 			public const int enterAlways = 2131165224;
@@ -4127,6 +4136,12 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070083
 			public const int getFriends = 2131165315;
 			
+			// aapt resource value: 0x7f070085
+			public const int header_main_page_clist1 = 2131165317;
+			
+			// aapt resource value: 0x7f070086
+			public const int historyList = 2131165318;
+			
 			// aapt resource value: 0x7f070005
 			public const int home = 2131165189;
 			
@@ -4142,11 +4157,11 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070044
 			public const int image = 2131165252;
 			
-			// aapt resource value: 0x7f070085
-			public const int imageView1 = 2131165317;
+			// aapt resource value: 0x7f07008b
+			public const int imageView1 = 2131165323;
 			
-			// aapt resource value: 0x7f070095
-			public const int info = 2131165333;
+			// aapt resource value: 0x7f07009b
+			public const int info = 2131165339;
 			
 			// aapt resource value: 0x7f070000
 			public const int item_touch_helper_previous_elevation = 2131165184;
@@ -4154,11 +4169,11 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070032
 			public const int left = 2131165234;
 			
-			// aapt resource value: 0x7f07008f
-			public const int line1 = 2131165327;
+			// aapt resource value: 0x7f070095
+			public const int line1 = 2131165333;
 			
-			// aapt resource value: 0x7f070093
-			public const int line3 = 2131165331;
+			// aapt resource value: 0x7f070099
+			public const int line3 = 2131165337;
 			
 			// aapt resource value: 0x7f07006f
 			public const int linear = 2131165295;
@@ -4169,11 +4184,11 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070046
 			public const int list_item = 2131165254;
 			
-			// aapt resource value: 0x7f070086
-			public const int main_content = 2131165318;
+			// aapt resource value: 0x7f07008c
+			public const int main_content = 2131165324;
 			
-			// aapt resource value: 0x7f07008d
-			public const int media_actions = 2131165325;
+			// aapt resource value: 0x7f070093
+			public const int media_actions = 2131165331;
 			
 			// aapt resource value: 0x7f070020
 			public const int middle = 2131165216;
@@ -4213,6 +4228,9 @@ namespace NotifyMe.Droid
 			
 			// aapt resource value: 0x7f070059
 			public const int radio = 2131165273;
+			
+			// aapt resource value: 0x7f070088
+			public const int receiver = 2131165320;
 			
 			// aapt resource value: 0x7f070073
 			public const int recipient = 2131165299;
@@ -4313,8 +4331,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070034
 			public const int start = 2131165236;
 			
-			// aapt resource value: 0x7f07008c
-			public const int status_bar_latest_event_content = 2131165324;
+			// aapt resource value: 0x7f070092
+			public const int status_bar_latest_event_content = 2131165330;
 			
 			// aapt resource value: 0x7f07005a
 			public const int submenuarrow = 2131165274;
@@ -4322,23 +4340,23 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f07006b
 			public const int submit_area = 2131165291;
 			
-			// aapt resource value: 0x7f070097
-			public const int tabIcon = 2131165335;
+			// aapt resource value: 0x7f07009d
+			public const int tabIcon = 2131165341;
 			
 			// aapt resource value: 0x7f07000f
 			public const int tabMode = 2131165199;
 			
+			// aapt resource value: 0x7f07009e
+			public const int tabText = 2131165342;
+			
+			// aapt resource value: 0x7f07008e
+			public const int tabs = 2131165326;
+			
+			// aapt resource value: 0x7f07009a
+			public const int text = 2131165338;
+			
 			// aapt resource value: 0x7f070098
-			public const int tabText = 2131165336;
-			
-			// aapt resource value: 0x7f070088
-			public const int tabs = 2131165320;
-			
-			// aapt resource value: 0x7f070094
-			public const int text = 2131165332;
-			
-			// aapt resource value: 0x7f070092
-			public const int text2 = 2131165330;
+			public const int text2 = 2131165336;
 			
 			// aapt resource value: 0x7f070052
 			public const int textSpacerNoButtons = 2131165266;
@@ -4349,8 +4367,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f070080
 			public const int text_input_password_toggle = 2131165312;
 			
-			// aapt resource value: 0x7f070090
-			public const int time = 2131165328;
+			// aapt resource value: 0x7f070096
+			public const int time = 2131165334;
 			
 			// aapt resource value: 0x7f070048
 			public const int title = 2131165256;
@@ -4358,8 +4376,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f07004d
 			public const int title_template = 2131165261;
 			
-			// aapt resource value: 0x7f070099
-			public const int toolbar = 2131165337;
+			// aapt resource value: 0x7f07009f
+			public const int toolbar = 2131165343;
 			
 			// aapt resource value: 0x7f070027
 			public const int top = 2131165223;
@@ -4379,8 +4397,8 @@ namespace NotifyMe.Droid
 			// aapt resource value: 0x7f07000a
 			public const int view_offset_helper = 2131165194;
 			
-			// aapt resource value: 0x7f070089
-			public const int viewpager = 2131165321;
+			// aapt resource value: 0x7f07008f
+			public const int viewpager = 2131165327;
 			
 			// aapt resource value: 0x7f070025
 			public const int withText = 2131165221;
@@ -4568,55 +4586,58 @@ namespace NotifyMe.Droid
 			public const int HistoryFragmentView = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int LoginView = 2130968619;
+			public const int historyListItem = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int MainView = 2130968620;
+			public const int LoginView = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int notification_media_action = 2130968621;
+			public const int MainView = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_media_cancel_action = 2130968622;
+			public const int notification_media_action = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_template_big_media = 2130968623;
+			public const int notification_media_cancel_action = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_template_big_media_narrow = 2130968624;
+			public const int notification_template_big_media = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_template_lines = 2130968625;
+			public const int notification_template_big_media_narrow = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_template_media = 2130968626;
+			public const int notification_template_lines = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_part_chronometer = 2130968627;
+			public const int notification_template_media = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_part_time = 2130968628;
+			public const int notification_template_part_chronometer = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int select_dialog_item_material = 2130968629;
+			public const int notification_template_part_time = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int select_dialog_multichoice_material = 2130968630;
+			public const int select_dialog_item_material = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int select_dialog_singlechoice_material = 2130968631;
+			public const int select_dialog_multichoice_material = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int SplashScreen = 2130968632;
+			public const int select_dialog_singlechoice_material = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int support_simple_spinner_dropdown_item = 2130968633;
+			public const int SplashScreen = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int tabView = 2130968634;
+			public const int support_simple_spinner_dropdown_item = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int toolbar = 2130968635;
+			public const int tabView = 2130968635;
+			
+			// aapt resource value: 0x7f04003c
+			public const int toolbar = 2130968636;
 			
 			static Layout()
 			{
