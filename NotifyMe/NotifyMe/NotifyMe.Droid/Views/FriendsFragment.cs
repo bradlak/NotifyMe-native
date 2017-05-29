@@ -21,8 +21,6 @@ namespace NotifyMe.Droid.Views
 
         private MvxPropertyChangedListener friendsListener;
 
-        private MvxPropertyChangedListener busyListener;
-
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             var ignored = base.OnCreateView(inflater, container, savedInstanceState);

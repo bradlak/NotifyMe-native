@@ -14,8 +14,6 @@ namespace NotifyMe.Core.ViewModels
 
         private MvxCommand<FacebookFriend> navigateToCreateMessageCommand;
 
-        private FacebookFriend selectedFriend;
-
         private ObservableCollection<FacebookFriend> friends;
 
         public FriendsViewModel(
@@ -34,23 +32,6 @@ namespace NotifyMe.Core.ViewModels
         protected IApplicationCache Cache { get; private set; }
 
         protected IMobileCenterLogger Logger { get; private set; }
-
-
-        public FacebookFriend SelectedFriend
-        {
-            get { return selectedFriend; }
-            set
-            {
-                selectedFriend = value;
-                RaisePropertyChanged();
-
-                if (value != null)
-                {
-                    Cache.SelectedFriend = SelectedFriend;
-                    ShowViewModel<CreateMessageViewModel>();
-                }
-            }
-        }
 
         public ObservableCollection<FacebookFriend> Friends
         {
@@ -83,12 +64,6 @@ namespace NotifyMe.Core.ViewModels
                     ShowViewModel<CreateMessageViewModel>();
                 }));
             }
-        }
-
-        protected override void OnResume()
-        {
-            base.OnResume();
-            SelectedFriend = null;
         }
     }
 }

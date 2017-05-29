@@ -3,6 +3,7 @@ using MvvmCross.iOS.Platform;
 using MvvmCross.Platform;
 using Foundation;
 using UIKit;
+using NotifyMe.iOS.PlatformSpecific;
 
 namespace NotifyMe.iOS
 {
@@ -21,6 +22,12 @@ namespace NotifyMe.iOS
 
             var setup = new Setup(this, Window);
             setup.Initialize();
+
+            UINavigationBar.Appearance.BarTintColor = SharedColors.Background;
+            UINavigationBar.Appearance.TintColor = UIColor.White;
+
+            UITabBar.Appearance.BarTintColor = SharedColors.Background;
+            UITabBar.Appearance.TintColor = UIColor.White;
 
             var startup = Mvx.Resolve<IMvxAppStart>();
             startup.Start();

@@ -1,7 +1,10 @@
 using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
+using MvvmCross.Platform;
 using MvvmCross.Platform.Platform;
+using NotifyMe.Core.Infrastructure;
+using NotifyMe.iOS.PlatformSpecific;
 using UIKit;
 
 namespace NotifyMe.iOS
@@ -26,6 +29,12 @@ namespace NotifyMe.iOS
         protected override IMvxTrace CreateDebugTrace()
         {
             return new DebugTrace();
+        }
+
+        protected override void InitializeLastChance()
+        {
+            base.InitializeLastChance();
+            Mvx.RegisterType<ILoginService, LoginService>();
         }
     }
 }
